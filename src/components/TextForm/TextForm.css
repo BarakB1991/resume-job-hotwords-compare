@@ -42,3 +42,18 @@ label {
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 576px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-right: 0;
+  }
+
+  .form-input {
+    width: 100%;
+    max-width: 100%;
+  }
+}

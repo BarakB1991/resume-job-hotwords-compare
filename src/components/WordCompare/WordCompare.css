@@ -39,3 +39,10 @@ tr:nth-child(even) {
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 576px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
