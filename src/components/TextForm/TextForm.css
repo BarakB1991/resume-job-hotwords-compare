@@ -58,9 +58,9 @@ label {
 
 @media (max-width: 576px) {
   .form-container {
-    align-items: baseline;
+    align-items: center;
     flex-direction: column;
-    width: 330px;
+    width: 288px;
   }
 
   .form-group {
@@ -75,13 +75,9 @@ label {
   }
 
   .btn-primary {
-    font-size: large;
+    font-size: medium;
     margin-top: 10px;
+    margin-right: 12px;
     padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
   }
 }
