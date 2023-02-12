@@ -12,6 +12,10 @@
   margin-right: 20px;
 }
 
+.form-group:last-of-type {
+  margin-right: 0;
+}
+
 label {
   text-align: left;
   margin-right: 10px;
@@ -43,9 +47,20 @@ label {
   cursor: pointer;
 }
 
+@media (max-width: 778px) {
+  .form-input {
+    width: 260px;
+    max-width: 260px;
+    height: 280px;
+    max-height: 280px;
+  }
+}
+
 @media (max-width: 576px) {
   .form-container {
+    align-items: baseline;
     flex-direction: column;
+    width: 330px;
   }
 
   .form-group {
@@ -53,7 +68,9 @@ label {
   }
 
   .form-input {
-    width: 100%;
-    max-width: 100%;
+    width: 92%;
+    max-width: 92%;
+    height: 220px;
+    max-height: 220px;
   }
 }
