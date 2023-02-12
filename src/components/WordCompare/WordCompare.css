@@ -40,6 +40,18 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
+@media (max-width: 778px) {
+  th,
+  td {
+    padding: 5px;
+  }
+
+  .btn-secondary {
+    font-size: small;
+    padding: 5px 10px;
+  }
+}
+
 @media (max-width: 576px) {
   table {
     display: block;
