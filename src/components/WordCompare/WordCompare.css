@@ -1,60 +1,11 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
-  font-family: Arial, sans-serif;
+  display: table;
+  table-layout: fixed;
 }
 
-th,
-td {
-  border: 1px solid #2196f3;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #4b99d9;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #4ea6d2;
-}
-
-.jobPost {
-  color: #ff8c00;
-}
-
-.resume {
-  color: #3cb371;
-}
-
-.btn-secondary {
-  font-size: medium;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: rgb(40, 40, 234);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-@media (max-width: 778px) {
-  th,
-  td {
-    padding: 5px;
-  }
-
-  .btn-secondary {
-    font-size: small;
-    padding: 5px 10px;
-  }
-}
-
-@media (max-width: 576px) {
-  table {
-    display: block;
-    overflow-x: auto;
-  }
+thead {
+  background-color: #161313;
+  width: fit-content;
 }

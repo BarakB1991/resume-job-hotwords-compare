@@ -33,8 +33,8 @@ const WordCompare = ({
               return (
                 <tr key={index}>
                   <td>{skillName}</td>
-                  <td style={{ color: 'blue' }}>{resumeCount}</td>
-                  <td style={{ color: 'red' }}>{jobPostCount}</td>
+                  <td>{resumeCount}</td>
+                  <td>{jobPostCount}</td>
                 </tr>
               );
             })}
@@ -64,8 +64,8 @@ const WordCompare = ({
               return (
                 <tr key={index}>
                   <td>{skillName}</td>
-                  <td style={{ color: 'blue' }}>{resumeCount}</td>
-                  <td style={{ color: 'red' }}>{jobPostCount}</td>
+                  <td>{resumeCount}</td>
+                  <td>{jobPostCount}</td>
                 </tr>
               );
             })}
