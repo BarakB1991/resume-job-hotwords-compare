@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Header from './components/Header/Header';
 import TextForm from './components/TextForm/TextForm';
 import WordCompare from './components/WordCompare/WordCompare';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [dataReceived, setDataReceived] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         {dataReceived && <WordCompare skills={dataReceived} />}
         {setErrorMessage && errorMessage}
       </main>
+      <Footer />
     </div>
   );
 }
