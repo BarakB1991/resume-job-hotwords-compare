@@ -1,13 +1,12 @@
+import './TextForm.css';
 import React, { useState } from 'react';
 import hrFlowApi from '../../utils/HRFlowApi';
 import mainApi from '../../utils/MainApi';
-import './TextForm.css';
 
 const TextForm = ({
-  dataReceived,
   setDataReceived,
-  errorMessage,
   setErrorMessage,
+  setSkillGapDataReceived,
 }) => {
   const [resume, setResume] = useState('');
   const [jobDescription, setJobDescription] = useState('');
@@ -26,9 +25,15 @@ const TextForm = ({
         return setErrorMessage(err.message || err);
       });
 
-    hrFlowApi.getSkillGap(jobDescription).then((res) => {
-      console.log(res);
-    });
+    hrFlowApi
+      .getSkillGap(jobDescription)
+      .then((res) => {
+        setSkillGapDataReceived(res.data);
+      })
+      .catch((err) => {
+        setSkillGapDataReceived([]);
+        return setErrorMessage(err.message || err);
+      });
   };
 
   return (

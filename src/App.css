@@ -1,3 +1,29 @@
 main {
   padding-top: 1.3rem;
 }
+
+button:enabled:hover {
+  filter: brightness(1);
+  background-color: #ffd675;
+}
+
+.btn-primary {
+  font-size: medium;
+  margin-top: 10px;
+  margin-right: 12px;
+  padding: 10px 20px;
+}
+
+.btn-secondary {
+  font-size: medium;
+  margin-top: 10px;
+  margin-right: 12px;
+  padding: 8px 16px;
+}
+.btn-secondary:focus {
+  filter: none;
+}
+
+.btn-secondary-active {
+  background-color: #f8eed6;
+}
