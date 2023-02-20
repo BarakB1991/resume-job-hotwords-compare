@@ -7,7 +7,7 @@ import WordCompare from './components/WordCompare/WordCompare';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const [dataReceived, setDataReceived] = useState(false);
+  const [dataReceived, setDataReceived] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
 
   return (
@@ -20,7 +20,7 @@ function App() {
           errorMessage={errorMessage}
           setErrorMessage={setErrorMessage}
         />
-        {dataReceived && <WordCompare skills={dataReceived} />}
+        {dataReceived.length !== 0 && <WordCompare skills={dataReceived} />}
         {setErrorMessage && errorMessage}
       </main>
       <Footer />
